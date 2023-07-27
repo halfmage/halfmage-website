@@ -1,0 +1,25 @@
+{
+  "name": "halfmage-website",
+  "version": "1.0.0",
+  "description": "Website for halfmage",
+  "main": "index.js",
+  "scripts": {
+    "dev:tailwind": "tailwindcss -i ./src/style/base.css -o ./_site/styles.css --watch",
+    "build": "eleventy && tailwindcss -i ./src/style/base.css -o ./_site/styles.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halfmage/halfmage-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/halfmage/halfmage-website/issues"
+  },
+  "homepage": "https://github.com/halfmage/halfmage-website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "tailwindcss": "^3.3.3"
+  }
+}
