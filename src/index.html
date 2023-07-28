@@ -7,9 +7,17 @@
     <link rel="shortcut icon" href="/img/favicon.svg" type="image/svg">
     <link rel="stylesheet" href="/styles.css"/>
 </head>
-<body>
-    <div class="w-screen h-screen bg-gray-900 text-gray-100 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-32 m-16" fill="none" viewBox="0 0 256 256"><path stroke="currentColor" stroke-linecap="square" stroke-width="16" d="M16 128h64m160 0h-64M128 16v64m0 160v-64m80-128-28 28M48 48l28 28M48 208l28-28m132 28-28-28m-4-52-24 24-24 24m48-48-24-24-24-24m0 96-24-24-24-24m0 0 24-24 24-24"/></svg>
+<body class="bg-gray-100 dark:bg-gray-950">
+    <div class="w-screen h-screen flex items-center justify-center">
+        <svg class="w-16" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                path { stroke: black; }
+                @media (prefers-color-scheme: dark) {
+                    path { stroke: white; }
+                }
+            </style>
+            <path d="M4 32H20M60 32H44M32 4V20M32 60V44M52 12L45 19M12 12L19 19M12 52L19 45M52 52L45 45M44 32L38 38L32 44M44 32L38 26L32 20M32 44L26 38L20 32M20 32L26 26L32 20" stroke="black" stroke-width="4" stroke-linecap="square"/>
+        </svg>        
     </div>
 </body>
 </html>

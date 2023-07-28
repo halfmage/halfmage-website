@@ -1,4 +1,9 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="200" height="200" fill="#111111"/>
-<path d="M41.6667 100H75.0001M158.333 100H125M100 41.6667V75M100 158.333V125M141.667 58.3334L127.083 72.9167M58.3334 58.3334L72.9167 72.9167M58.3334 141.667L72.9167 127.083M141.667 141.667L127.083 127.083M125 100L112.5 112.5L100 125M125 100L112.5 87.5L100 75M100 125L87.5001 112.5L75.0001 100M75.0001 100L87.5001 87.5L100 75" stroke="white" stroke-width="8.32099" stroke-linecap="square"/>
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        path { stroke: black; }
+        @media (prefers-color-scheme: dark) {
+            path { stroke: white; }
+        }
+    </style>
+    <path d="M4 32H20M60 32H44M32 4V20M32 60V44M52 12L45 19M12 12L19 19M12 52L19 45M52 52L45 45M44 32L38 38L32 44M44 32L38 26L32 20M32 44L26 38L20 32M20 32L26 26L32 20" stroke="black" stroke-width="4" stroke-linecap="square"/>
 </svg>
