@@ -4,8 +4,8 @@
   "description": "Website for halfmage",
   "main": "index.js",
   "scripts": {
-    "dev:tailwind": "tailwindcss -i ./src/style/base.css -o ./_site/styles.css --watch",
-    "build": "eleventy && tailwindcss -i ./src/style/base.css -o ./_site/styles.css --minify"
+    "start": "eleventy --serve & npx tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o _site/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o _site/style.css --minify"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "sal.js": "^0.8.5"
   }
 }
