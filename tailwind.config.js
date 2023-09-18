@@ -1,13 +1,11 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ["./src/**/*.{html,njk}"],
+  content: ["_site/**/*.html"],
   theme: {
     colors: {
-      gray: colors.neutral,
+      gray: colors.zinc,
     },
-    extend: {},
   },
   plugins: [],
 }
-

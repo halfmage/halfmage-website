@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerrit Halfmann — Webdesign & Development</title>
+    <meta name="description" content="I'm Gerrit, a web designer and frontend developer. Driven by passion for modern design and cutting-edge technology I work with companies and startups to scale their design-systems and website performance.">
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <meta name="theme-color" content="#111827">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.gerrithalfmann.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gerrit Halfmann - Webdesign & Development">
+    <meta property="og:description" content="I'm Gerrit, a web designer and frontend developer. Driven by passion for modern design and cutting-edge technology I work with companies and startups to scale their design-systems and website performance.">
+    <meta property="og:image" content="/images/social.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@halfmage" />
+    <meta name="twitter:title" content="Gerrit Halfmann - Webdesign & Development">
+    <meta name="twitter:description" content="I'm Gerrit, a web designer and frontend developer. Driven by passion for modern design and cutting-edge technology I work with companies and startups to scale their design-systems and website performance.">
+    <meta name="twitter:image" content="/images/social.png">
+
+    <link rel="stylesheet" href="/style.css?v={% version %}" />
+</head>
+
+<body class="bg-white text-gray-900 pb-16">
+
+    <div class="max-w-screen-lg px-8 mx-auto">
+
+        {% block content %}{% endblock %}
+
+        <footer class="w-full bg-white mt-16" aria-labelledby="footer-heading">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-16">
+                <div class="flex flex-col items-baseline space-y-6">
+                <div class="mx-auto">
+                    <a href="/" class="mx-auto text-lg text-center text-black transition duration-500 ease-in-out transform tracking-relaxed">
+                        <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128"><path fill="#18181B" d="M68 35V0h-8v35L35 60H0v8h35l25 25v35h8V93l25-25h35v-8H93L68 35ZM42.2 64 64 42.2 85.8 64 64 85.8 42.2 64Zm-21-48.5 20 20-5.7 5.6-20-20 5.6-5.6Zm91.3 5.6-20 20-5.6-5.6 20-20 5.6 5.6Zm-97 85.8 20-20 5.6 5.6-20 20-5.6-5.6Zm91.4 5.6 5.6-5.6-20-20-5.6 5.6 20 20Z"/></svg>       
+                    </a>
+                </div>
+                <div class="mx-auto">
+                    <span class="mx-auto mt-2 text-sm text-gray-500">
+                    Copyright © 2023 | 
+                    <a class="underline" href="/imprint">Imprint</a>
+                    </span>
+                </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+</body>
+</html>
