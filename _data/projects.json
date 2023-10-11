@@ -1,5 +1,12 @@
 [
     {
+        "logo": "./images/sleap.png",
+        "name": "Sleap.io",
+        "teaser": "First native Web3 Hotel Booking Platform using Blockchain, the revolutionary blockchain-based hotel booking platform. Curated selection of hotel deals, all with special wallet rates.",
+        "tags": [ "Branding", "Design System" ],
+        "url": "https://sleap.io"
+    },
+    {
         "logo": "./images/camino.png",
         "name": "Camino Network",
         "teaser": "Camino is the travel industry blockchain. Fueled by the Camino token, it is offering a versatile platform to expand current business models and to create new touristic products to delight travelers and business partners.",
