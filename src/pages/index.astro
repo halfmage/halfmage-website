@@ -1,6 +1,13 @@
-{% extends "layouts/default.html" %}
+---
+import DefaultLayout from '../layouts/Default.astro';
+import projectData from '../data/projects.json'
+import TestimonialData from '../data/testimonials.json'
 
-{% block content %}
+import { Image } from 'astro:assets';
+---
+<DefaultLayout>
+
+
 
     <!-- Hero starts -->
     <div class="mb-16 md:mb-24">
@@ -26,22 +33,24 @@
             Selected clients <span class="text-gray-500">and projects</span>
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {% for a in projects %}
-            <a href="{{a.url}}" target="_blank" class="p-4 flex flex-col border border-gray-200 shadow-md rounded-lg ring-gray-300 hover:ring-1 group relative">
-                <div class="w-16 flex-shrink-0 mb-2">
-                    {% image a.logo, a.name, "", "w-full h-full" %}
-                </div>
-                <div class="text-xl font-semibold tracking-tight w-full">
-                    {{a.name}}
-                </div>
-                <div class="text-sm leading-5 text-gray-500 mt-2 mb-3">
-                    {{a.teaser}}
-                </div>
-                <div class="flex flex-wrap justify-start text-xs text-gray-700 leading-4 group-hover:text-gray-900 mt-auto">
-                    {{a.url}}
-                </div>
-            </a>
-            {% endfor %} 
+            {
+                projectData.map((project) => {
+                    return (
+                        <a href="{{project.url}}" target="_blank" class="p-4 flex flex-col border border-gray-200 shadow-md rounded-lg ring-gray-300 hover:ring-1 group relative">
+                            <Image class="flex-shrink-0 mb-2" src={project.logo} alt={project.name} width={64} height={64} />
+                            <div class="text-xl font-semibold tracking-tight w-full">
+                                {project.name}
+                            </div>
+                            <div class="text-sm leading-5 text-gray-500 mt-2 mb-3">
+                                {project.teaser}
+                            </div>
+                            <div class="flex flex-wrap justify-start text-xs text-gray-700 leading-4 group-hover:text-gray-900 mt-auto">
+                                {project.url}
+                            </div>
+                        </a>
+                    );
+                })
+            }
         </div>    
     </div>
     <!-- Projects end -->
@@ -52,33 +61,59 @@
             Client testimonials <span class="text-gray-500">and reviews</span>
         </h2>
         <ul class="w-full border-t divide-y border-mercury-300 divide-mercury-300" role="list">
-            {% for a in testimonials %}
+        {
+            TestimonialData.map((a) => {
+                return (
+                <li class="py-4 lg:py-8">
+                    <div class="grid items-start grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-24">
+                    <div class="lg:col-span-2 lg:order-last">
+                        <p class="text-base text-gray-700">
+                            {a.text}
+                        </p>
+                    </div>
+                    <div class="inline-flex items-center gap-4">
+                        <div class="flex-shrink-0">
+                            <Image class="flex-shrink-0 mb-2 rounded-full" src={a.slug} alt={a.name} width={64} height={64} />
+                        </div>
+                        <div class="flex-1 min-w-0">
+                        <p class="text-lg font-medium leading-6 text-black">
+                            {a.name}
+                        </p>
+                        <p class="text-sm text-gray-500">
+                            {a.company}
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                );
+            })
+        }
             <li class="py-4 lg:py-8">
                 <div class="grid items-start grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-24">
                 <div class="lg:col-span-2 lg:order-last">
                     <p class="text-base text-gray-700">
-                        {{a.text}}
+
                     </p>
                 </div>
                 <div class="inline-flex items-center gap-4">
                     <div class="flex-shrink-0">
-                        {% image a.slug, a.name, "", "object-cover w-10 h-10 rounded-full lg:h-16 lg:w-16" %}
+
                     </div>
                     <div class="flex-1 min-w-0">
                     <p class="text-lg font-medium leading-6 text-black">
-                        {{a.name}}
+
                     </p>
                     <p class="text-sm text-gray-500">
-                        {{a.company}}
+
                     </p>
                     </div>
                 </div>
                 </div>
             </li>
-            {% endfor %} 
+
         </ul>
     </div>            
     <!-- Testimonial end -->
 
-
-{% endblock %}
+</DefaultLayout>
