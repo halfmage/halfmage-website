@@ -34,7 +34,7 @@
 
     <div class="max-w-screen-lg px-8 mx-auto py-16 md:py-24">
 
-        {% block content %}{% endblock %}
+        {{ content | safe }}
 
         <footer class="w-full bg-white mt-16" aria-labelledby="footer-heading">
             <h2 id="footer-heading" class="sr-only">Footer</h2>
