@@ -59,5 +59,11 @@ module.exports = function(eleventyConfig) {
     })
     return {
         htmlTemplateEngine: "njk",
+        dir: {
+            input: "src",
+            includes: "includes",
+			layouts: "layouts",
+			data: "data",
+        }
     }
 };
