@@ -22,14 +22,14 @@
     },
     {
         "logo": "./src/images/qizify.png",
-        "name": "Qizify Learning",
+        "name": "LearnSlice",
         "teaser": "An online learning platform that empowers your students to learn by creating and solving quizzes related to their study program while tracking performance.",
         "tags": [ "Branding", "Design", "Website" ],
         "url": "https://qizify.com/en"
     },
     {
         "logo": "./src/images/majesticons.png",
-        "name": "Majesticons Icons",
+        "name": "Majesticons",
         "teaser": "Majestic looking iconset with 720 free MIT License icons in two styles. Carefully crafted with and for Figma. Change stroke-width, corner radius and colors easily.",
         "tags": [ "Personal", "Icons", "Design" ],
         "url": "https://majesticons.com"
