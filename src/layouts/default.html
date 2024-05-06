@@ -28,15 +28,14 @@
     <meta name="twitter:image" content="/images/social.png">
 
     <link rel="stylesheet" href="/style.css?v={% version %}" />
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 
-<body class="bg-white text-gray-900">
+<body class="bg-white p-3 md:p-6 font-sans">
 
-    <div class="">
-
-        {{ content | safe }}
-
-    </div>
+    {{ content | safe }}
 
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
