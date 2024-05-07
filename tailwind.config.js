@@ -1,12 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  darkMode: 'class',
   content: ["_site/**/*.html"],
-  theme: {
-    colors: {
-      white: '#fff',
-      gray: colors.zinc,
-    },
-  },
   plugins: [],
 }
