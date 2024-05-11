@@ -17,6 +17,11 @@ body {
   margin-right: .5rem;
 }
 
+li a {
+  padding: .125rem;
+  display: inline-block;
+}
+
 small {
   font-family: monospace;
   font-size: 10px;
