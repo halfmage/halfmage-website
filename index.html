@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://halfmage.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Halfmage | Web design & development">
+  <meta property="og:description" content="We are a digital full-service partner driven by passion for modern design and cutting-edge technology we work with companies and startups to scale their design-systems and website performance.">
+  <meta property="og:image" content="/social.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="halfmage.com">
+  <meta property="twitter:url" content="https://halfmage.com">
+  <meta name="twitter:title" content="Halfmage | Web design & development">
+  <meta name="twitter:description" content="We are a digital full-service partner driven by passion for modern design and cutting-edge technology we work with companies and startups to scale their design-systems and website performance.">
+  <meta name="twitter:image" content="/social.png">
+</head>
+<body>
+
+  <main>
+    <article>
+      <h1>Half<i>mage</i></h1>
+      <p>
+        <i>We design and build your next digital experience</i> – We are a digital full-service partner driven by passion for modern design and cutting-edge technology we work with companies and startups to scale their design-systems and website performance.
+      </p>
+      <p>
+        <a href="https://calendar.app.google/KgQQCEXRWPbrTzGP9" class="button" target="_blank" rel="noopener noreferrer">⚞ Book a call ⚟</a>
+        <small>*Limited availability</small>
+      </p>
+
+      <hr>
+
+      <h2>Clients</h2>
+      <ul>
+        <li><a href="https://sleap.io" target="_blank" rel="noopener noreferrer">Sleap.io</a></li>
+        <li><a href="http://chain4travel.com" target="_blank" rel="noopener noreferrer">Chain4Travel GmbH</a></li>
+        <li><a href="http://camino.network" target="_blank" rel="noopener noreferrer">Camino Network</a></li>
+        <li><a href="http://learnslice.com" target="_blank" rel="noopener noreferrer">LearnSlice</a></li>
+        <li><a href="https://peakwork.com/" target="_blank" rel="noopener noreferrer">Peakwork GmbH</a></li>
+        <li><a href="https://existentialpsychiatry.com/" target="_blank" rel="noopener noreferrer">Existential Psychotherapy</a></li>
+      </ul>
+
+      <hr>
+
+      <h2>Services</h2>
+      <ul>
+        <li>Responsive websites</li>
+        <li>Mobile apps</li>
+        <li>Logos, branding material</li>
+        <li>Design systems, styleguides</li>
+        <li>Social media, marketing, blog graphics</li>
+        <li>Powerpoint templates, slide decks</li>
+        <li>Icons (<a href="http://majesticons.com" target="_blank" rel="noopener noreferrer">Majesticons</a>, <a href="http://pixelarticons.com" target="_blank" rel="noopener noreferrer">Pixelarticons</a>)</li>
+        <li>Website development</li>
+        <li>Website hosting</li>
+        <li>CMS Management</li>
+      </ul>
+
+      <hr>
+
+      <small>This website respects your privacy. It is very fast, very small and can be viewed and any screen with any resolution.</small>
+    </article>
+  </main>
+
+  <aside>
+    <img class="mySlides" src="work4.png">
+    <img class="mySlides" src="work1.png">
+    <img class="mySlides" src="work3.png">
+    <img class="mySlides" src="work5.png">
+    <img class="mySlides" src="work6.png">
+    <img class="mySlides" src="work2.png">
+    <img class="mySlides" src="work7.png">
+    <img class="mySlides" src="work8.png">
+  </aside>
+
+</body>
+
+<script>
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+</script>
+
+<!-- SimpleAnalytics Tool. Respects your privacy -->
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+</html>
