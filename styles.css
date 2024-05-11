@@ -46,6 +46,7 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 1 / 1;
 }
 
 aside img {
@@ -86,15 +87,16 @@ hr {
     flex-direction: row;
   }
   main, aside {
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 1;
+    flex-basis: 50vw;
   }
   aside {
     order: 99;
     height: 100vh;
+    aspect-ratio: none;
   }
   main {
-    min-width: 320px;
     order: 0;
     padding: 2rem;
   }
