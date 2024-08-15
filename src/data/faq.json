@@ -1,0 +1,46 @@
+[
+    {
+        "question": "How does the design subscription work?",
+        "answer": "Our subscription model is simple. You sign up, make your design requests, and our team of professional designers starts working on your projects immediately. You can make as many requests as you like, and we'll deliver the results in the order of your priority. If you have any questions, we can clarify them over Slack."
+    },
+{
+        "question": "Why shouldn't I just hire a full-time designer?",
+        "answer": "For one, the annual costs of a full-time senior designer now exceed 90,000 EUR, plus benefits (and good luck finding one available). Additionally, you may not always have enough work to keep them constantly busy, so you're paying for time you can't utilize. With the monthly plan, you can pause and resume your subscription as often as you need to ensure you're only paying your designer when you have work for them."
+    },
+{
+        "question": "What types of design projects do you cover?",
+        "answer": "We offer a wide range of design services, including graphic design, web design, branding, social media graphics, print designs, and much more. See the full list of our services here."
+    },
+{
+        "question": "What happens if I'm not satisfied with a design?",
+        "answer": "Your satisfaction is our top priority. If you're not satisfied with a design, we'll work closely with you to make the necessary changes until you're completely happy. Unlimited revisions are included."
+    },
+{
+        "question": "How fast are the turnaround times?",
+        "answer": "Turnaround times vary depending on the complexity of the project. For most projects, we deliver initial drafts within 1-3 business days. More complex projects may take a bit longer. We'll communicate accordingly if delivery will take longer than 3 days."
+    },
+{
+        "question": "How do I request designs?",
+        "answer": "We offer a lot of flexibility in how you request designs using Trello. Some common methods clients request designs include directly through Trello, sharing Google documents or wireframes, or even recording a short Loom video (for those who prefer not to write out their requirements). Basically, if it can be linked to or shared in Trello, it's fair game."
+    },
+{
+        "question": "Can I cancel or change the subscription anytime?",
+        "answer": "Yes, our model is extremely flexible. You can cancel or adjust your subscription anytime to meet your current needs."
+    },
+{
+        "question": "How does the pause feature work?",
+        "answer": "We understand that you may not have enough design work to fill an entire month. Maybe you only have one or two design requests at the moment. That's where pausing your subscription comes in. The billing cycles are based on a 31-day period. For example, if you sign up and use the service for 21 days and then decide to pause your subscription, the billing cycle will be paused, and you'll have 10 days of service remaining to be used anytime in the future."
+    },
+{
+        "question": "What if I only have a single request?",
+        "answer": "That's fine. You can pause your subscription when finished and return when you have additional design needs. There's no need to let the rest of your subscription go to waste."
+    },
+{
+        "question": "No calls or meetings?",
+        "answer": "Our platform handles everything with a chat system over Slack, integrated directly into your project. This way, you always keep track of conversations relevant to your requests. You can also contact us directly via Slack if you have any problems, so you don't need to track emails or use other apps."
+    },
+{
+        "question": "Is there a refund if I'm not satisfied with the service?",
+        "answer": "Due to the high-quality nature of the work, no refunds will be issued."
+    }
+]

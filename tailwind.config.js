@@ -4,7 +4,7 @@ module.exports = {
   content: ["_site/**/*.html"],
   theme: {
     fontFamily: {
-      'sans': ['Plus Jakarta Sans, sans-serif']
+      'sans': ['Primary, sans-serif']
     },
     extends: {
       colors: {

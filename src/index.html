@@ -2,77 +2,21 @@
 layout: default
 ---
 
-    <div class="max-w-screen-sm mb-12 mx-auto">
-        <div class="flex flex-col items-start gap-8 mb-3 md:mb-6">
-            <h1 class="font-semibold tracking-tight lg:text-6xl sm:text-5xl text-4xl">
-                We design & build your next digital experience
-            </h1>
-            <p class="leading-snug">A full-service partner passionate about modern design and modern technology, helping companies enhance their design systems and website performance.</p>
-            <a href="#" class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 font-semibold text-white py-2 px-3 rounded-xl text-center">Get in touch</a>
-        </div>
-        
-        <div class="flex w-full gap-12">
-            <div class="flex flex-col gap-4">
-                <h2 class="font-medium tracking-tight">What we do</h2>
-                <div class="">
-                    <div>✔ Web design</div>
-                    <div>✔ Design systems</div>
-                    <div>✔ Landing pages</div>
-                    <div>✔ Mobile apps</div>
-                    <div>✔ Website development</div>
-                    <div>✔ Email templates</div>
-                    <div>✔ Social media assets</div>
-                </div>
-            </div>
-            
-            <div class="flex flex-col gap-4">
-                <h2 class="font-medium tracking-tight">Industries</h2>
-                <div class="">
-                    <div>✈️ Travel</div>
-                    <div>📚 Education</div>
-                    <div>👩‍⚕️ Healthcare</div>
-                    <div>🤝 HR and Recruiting</div>
-                    <div>⛓️ Web3</div>
-                </div>
-            </div>
-        </div>
+<div class="wrapper-text section text-center">
+    <p class="inline-flex gap-2 justify-center text-sm border border-gray-200 rounded-xl px-3 py-1.5 bg-gray-100">
+        Subscribe <span>--></span> Design <span>--></span> Development
+    </p>
+    <div class="headline my-6">
+        Bring your brand and website to the future
     </div>
-    
-    <div class="container mx-auto">
-        <h1 class="font-semibold text-2xl mb-8">✈️  Innovative Design Solutions for the Travel Tech Companies</h1>
-        <div class="grid grid-cols-4 gap-3 md:gap-6">
-            <div class="col-span-1">{% image "src/images/sample01.png", "dasdasd", "", "border border-gray-200 rounded-xl" %}</div>
-            <div class="col-span-1">{% image "src/images/sample03.png", "dasdasd", "", "border border-gray-200 rounded-xl" %}</div>
-            <div class="col-span-1">{% image "src/images/sample05.png", "dasdasd", "", "border border-gray-200 rounded-xl" %}</div>
-            <div class="col-span-1 bg-gray-100 rounded-xl p-8 flex flex-col justify-between">
-                <p class="">"Halfmage creates beautiful designs with technical know-how and a deep understanding of their work. I have had the pleasure of working with Halfmage on various projects for several years."</p>
-                <div class="flex items-center gap-2">
-                    {% image "./src/images/ralf-usbeck.png", "Ralf Usbeck", "", "w-10 rounded-full overflow-hidden" %}
-                    <div>
-                        <div class="text-sm">Ralf Usbeck</div>
-                        <div class="text-gray-500 text-sm">CEO Chain4Travel</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="mb-6">
+        Full design power in subscription. Rapid, fixed-rate, flexible cancellable, with a direct design manager who understands your vision.
     </div>
-    
-    <div class="container mx-auto mt-12">
-        <h1 class="font-semibold text-2xl mb-8">📚 Shaping Creative Designs in Education</h1>
-        <div class="grid grid-cols-4 gap-3 md:gap-6">
-            <div class="col-span-1">{% image "src/images/sample01.png", "dasdasd", "", "border border-gray-200 rounded-xl" %}</div>
-            <div class="col-span-1">{% image "src/images/sample03.png", "dasdasd", "", "border border-gray-200 rounded-xl" %}</div>
-            <div class="col-span-1">{% image "src/images/sample05.png", "dasdasd", "", "border border-gray-200 rounded-xl" %}</div>
-            <div class="col-span-1 bg-gray-100 rounded-xl p-8 flex flex-col justify-between">
-                <p class="">"Halfmage creates beautiful designs with technical know-how and a deep understanding of their work. I have had the pleasure of working with Halfmage on various projects for several years."</p>
-                <div class="flex items-center gap-2">
-                    {% image "./src/images/alesia-kunts.png", "Ralf Usbeck", "", "w-10 rounded-full overflow-hidden" %}
-                    <div>
-                        <div class="text-sm">Alesia Kunts</div>
-                        <div class="text-gray-500 text-sm">CEO LearnSlice</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <a href="#pricing" class="button">See plans</a>
 </div>
+
+{% include "sections/work-slider.html" %}
+{% include "sections/benefits.html" %}
+{% include "sections/capabilities.html" %}
+{% include "sections/pricing.html" %}
+{% include "sections/faq.html" %}

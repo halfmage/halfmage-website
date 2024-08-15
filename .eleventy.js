@@ -2,7 +2,7 @@ const htmlmin = require('html-minifier')
 const Image = require("@11ty/eleventy-img")
 const now = String(Date.now())
 
-async function imageShortcode(src, alt, sizes, imgClass) {
+async function imageShortcode(src, alt, containerClass, imgClass) {
     if(alt === undefined) {
         // You bet we throw an error on missing alt (alt="" works okay)
         throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -20,7 +20,7 @@ async function imageShortcode(src, alt, sizes, imgClass) {
 
     return `<picture>
         ${Object.values(metadata).map(imageFormat => {
-        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+        return `  <source class="${containerClass}" type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}">`;
         }).join("\n")}
         <img
             src="${lowsrc.url}"
@@ -36,13 +36,18 @@ async function imageShortcode(src, alt, sizes, imgClass) {
 module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget('tailwind.config.js')
     eleventyConfig.addWatchTarget('tailwind.css')
-    eleventyConfig.addPassthroughCopy('images')
+    eleventyConfig.addPassthroughCopy('src/images')
+    eleventyConfig.addPassthroughCopy({ 'src/images/favicon.png': './favicon.png' })
     eleventyConfig.addPassthroughCopy('src/fonts')
     eleventyConfig.addPassthroughCopy({ './node_modules/alpinejs/dist/cdn.js': './alpine.js' })
+    eleventyConfig.addPassthroughCopy({ './node_modules/swiper/swiper-bundle.min.js': './swiper.min.js' })
+    eleventyConfig.addPassthroughCopy({ './node_modules/swiper/swiper-bundle.min.css': './swiper.min.css' })
     eleventyConfig.addShortcode('version', function () {
         return now
     })
+
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
+
     eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
         if (
             outputPath &&
@@ -57,6 +62,7 @@ module.exports = function(eleventyConfig) {
         }
         return content
     })
+
     return {
         htmlTemplateEngine: "njk",
         dir: {

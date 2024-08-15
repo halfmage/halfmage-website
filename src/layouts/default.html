@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth selection:bg-black selection:text-white no-touchevents">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +7,8 @@
     <title>Halfmage | Web design & Development</title>
     <meta name="description" content="We are a digital full-service partner driven by passion for modern design and cutting-edge technology we work with companies and startups to scale their design-systems and website performance.">
 
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <meta name="theme-color" content="#111827">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta name="theme-color" content="#fff">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://www.halfmage.com/">
@@ -29,16 +26,28 @@
 
     <link rel="stylesheet" href="/style.css?v={% version %}" />
 
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="/swiper.min.css?v={% version %}" />
 </head>
 
-<body class="bg-white p-3 md:p-6 font-sans">
+<body class="font-sans antialiased overflow-x-hidden bg-gray-50">
+
+    {% include "header.html" %}
 
     {{ content | safe }}
 
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+
+    <script src="/swiper.min.js?v={% version %}"></script>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            grabCursor: true,
+            freeMode: true,
+        });
+    </script>
 
 </body>
 </html>

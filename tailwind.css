@@ -3,34 +3,78 @@
 @tailwind utilities;
 
 @font-face {
-    font-display: swap;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/fonts/plus-jakarta-sans-v8-latin-regular.woff2') format('woff2');
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    src: url('/fonts/plus-jakarta-sans-v8-latin-500.woff2') format('woff2');
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 600;
-    src: url('/fonts/plus-jakarta-sans-v8-latin-600.woff2') format('woff2');
-  }
-  
-  @font-face {
-    font-display: swap;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/fonts/plus-jakarta-sans-v8-latin-700.woff2') format('woff2');
-  }
-  
+  font-display: swap;
+  font-family: 'Primary';
+  src: url('/fonts/InterVariable.woff2') format('woff2');
+}
+
+.headline {
+  @apply text-4xl md:text-6xl tracking-tight;
+}
+
+.subheadline {
+  @apply text-2xl md:text-4xl tracking-tight;
+}
+
+.title {
+  @apply text-lg md:text-2xl;
+}
+
+.subtitle {
+  @apply text-base font-semibold
+}
+
+.wrapper {
+  @apply max-w-screen-xl mx-auto px-4
+}
+
+.wrapper-text {
+  @apply max-w-screen-sm mx-auto px-4
+}
+
+.button {
+  @apply transition-colors inline-block text-sm py-2.5 px-5 border border-gray-950 bg-gray-950 font-medium text-white rounded-lg hover:bg-gray-800
+}
+
+.button-outline {
+  @apply transition-colors inline-block text-sm py-2.5 px-5 border border-gray-950 font-medium text-gray-950 rounded-lg hover:bg-gray-200
+}
+
+.button-text {
+  @apply transition-colors inline-block text-sm py-2.5 px-5 font-medium text-gray-950 rounded-lg hover:bg-gray-200 underline
+}
+
+.section {
+  @apply py-12 md:py-24
+}
+
+.card {
+  @apply bg-white p-4 md:p-8 rounded-2xl
+}
+
+.grid-preset-2 {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.grid-preset-3 {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+}
+
+.grid-preset-4 {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: auto !important;
+}
