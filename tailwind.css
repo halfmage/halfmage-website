@@ -25,7 +25,7 @@
 }
 
 .wrapper {
-  @apply max-w-screen-xl mx-auto px-4
+  @apply max-w-screen-lg mx-auto px-4
 }
 
 .wrapper-text {
@@ -33,23 +33,27 @@
 }
 
 .button {
-  @apply transition-colors inline-block text-sm py-2.5 px-5 border border-gray-950 bg-gray-950 font-medium text-white rounded-lg hover:bg-gray-800
+  @apply transition-colors inline-block text-sm py-3 px-5 border border-gray-950 bg-gray-950 font-medium text-white rounded-full hover:bg-gray-800 text-center
 }
 
 .button-outline {
-  @apply transition-colors inline-block text-sm py-2.5 px-5 border border-gray-950 font-medium text-gray-950 rounded-lg hover:bg-gray-200
+  @apply transition-colors inline-block text-sm py-3 px-5 border border-gray-300 font-medium text-gray-950 rounded-full hover:bg-gray-100 text-center
 }
 
 .button-text {
-  @apply transition-colors inline-block text-sm py-2.5 px-5 font-medium text-gray-950 rounded-lg hover:bg-gray-200 underline
+  @apply transition-colors inline-block text-sm py-3 px-5 font-medium text-gray-950 rounded-full hover:bg-gray-200 underline text-center
 }
 
 .section {
-  @apply py-12 md:py-24
+  @apply py-8 md:py-16
 }
 
 .card {
-  @apply bg-white p-4 md:p-8 rounded-2xl
+  @apply border border-gray-200 bg-white p-4 md:p-6 rounded-3xl
+}
+
+.card-no-padding {
+  @apply border border-gray-200 bg-white rounded-3xl
 }
 
 .grid-preset-2 {

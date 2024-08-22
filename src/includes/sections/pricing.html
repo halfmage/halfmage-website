@@ -1,50 +1,54 @@
 <div class="wrapper section" id="pricing">
-    <div class="subheadline mb-4 text-center">
+    <div class="subheadline mb-2">
         Plans and Pricing Options
     </div>
-    <p class="mb-8 text-center">Invest in design and development that drives your business. Clear, straightforward plans tailored to your needs.</p>
-    <div class="grid-preset-2">
+    <p class="mb-8">Invest in design and development that drives your business. Clear, straightforward plans tailored to your needs.</p>
+    <div class="grid-preset-2 gap-1 text-sm">
 
-        <div class="card flex flex-col gap-6">
+        <div class="card flex flex-col gap-4">
             <div>
-                <span class="text-sm border border-gray-200 rounded-xl px-3 py-1.5 bg-gray-100">Design Partner</span>
+                <span class="text-sm border border-gray-200 rounded-full px-3 py-1.5 bg-gray-100">Design Partner</span>
             </div>
             <div class="title">Design only</div>
-            <ul class="list-inside flex flex-col gap-2 *:flex *:gap-2 *:items-center mb-6">
-                <li><span>--></span> Unlimited Requests</li>
-                <li><span>--></span> Requests handled by your priorities</li>
-                <li><span>--></span> Delivery in 24-72 hours</li>
-                <li><span>--></span> Personal manager</li>
-                <li><span>--></span> Communication via Slack</li>
+            <ul role="list" class="space-y-1 list-inside list-disc marker:bg-green-400">
+                <li>Unlimited Requests</li>
+                <li>Requests handled by your priorities</li>
+                <li>Delivery in 24-72 hours</li>
+                <li>Personal manager</li>
+                <li>Communication via Slack</li>
+                <li class="opacity-50"><strike>Marketing website development</strike></li>
+                <li class="opacity-50"><strike>CMS integration</strike></li>
             </ul>
             <div class="mt-auto">
-                <div class="font-medium subheadline">4.999€ <span class="text-base">/month</span></div>
-                <a href="{{site.stripe.design}}" target="_blank" rel="noopener noreferrer" class="button my-4">Get started</a>
+                <div class="title mt-0 mb-4">4.999 € <span class="text-base text-gray-500">/month</span></div>
+                <a href="{{site.stripe.design}}" target="_blank" rel="noopener noreferrer" class="button w-full mb-2">Get started --></a>
+                <a href="{{site.stripe.design}}" target="_blank" rel="noopener noreferrer" class="button-outline w-full mb-4">Book a call</a>
                 <div class="text-gray-500">Pause or cancel anytime.</div>
             </div>
         </div>
 
-        <div class="card flex flex-col gap-6">
+        <div class="card flex flex-col gap-4">
             <div>
-                <span class="text-sm border border-gray-200 rounded-xl px-3 py-1.5 bg-gray-100">Full-Service Partner</span>
+                <span class="text-sm border border-gray-200 rounded-full px-3 py-1.5 bg-gray-100">Full-Service Partner</span>
             </div>
             <div class="title">Design + Development</div>
-            <ul class="list-inside flex flex-col gap-2 *:flex *:gap-2 *:items-center mb-6">
-                <li><span>--></span> Unlimited Requests</li>
-                <li><span>--></span> Requests handled by your priorities</li>
-                <li><span>--></span> Delivery in 24-72 hours</li>
-                <li><span>--></span> Personal manager</li>
-                <li><span>--></span> Communication via Slack</li>
-                <li class="font-bold"><span>--></span> Marketing website development</li>
-                <li class="font-bold"><span>--></span> CMS integration</li>
+            <ul role="list" class="space-y-1 list-inside list-disc marker:bg-green-400">
+                <li>Unlimited Requests</li>
+                <li>Requests handled by your priorities</li>
+                <li>Delivery in 24-72 hours</li>
+                <li>Personal manager</li>
+                <li>Communication via Slack</li>
+                <li>Marketing website development</li>
+                <li>CMS integration</li>
             </ul>
             <div class="mt-auto">
-                <div class="font-medium subheadline">4.999€ <span class="text-base">/month</span></div>
-                <a href="{{site.stripe.dev}}" target="_blank" rel="noopener noreferrer" class="button my-4">Get started</a>
+                <div class="title mt-0 mb-4">9.999 € <span class="text-base text-gray-500">/month</span></div>
+                <a href="{{site.stripe.dev}}" target="_blank" rel="noopener noreferrer" class="button w-full mb-2">Get started --></a>
+                <a href="{{site.stripe.dev}}" target="_blank" rel="noopener noreferrer" class="button-outline w-full mb-4">Book a call</a>
                 <div class="text-gray-500">Pause or cancel anytime.</div>
-            </div>
             </div>
         </div>
 
+        </div>
     </div>
 </div>
