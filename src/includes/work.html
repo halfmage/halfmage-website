@@ -1,80 +1,83 @@
-<div class="flex flex-nowrap cursor-grab gap-4 p-4 pb-2 border-y border-gray-200 bg-white overflow-x-scroll h-min w-full text-gray-400 text-sm items active:cursor-grabbing transition-all scroll-smooth">
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/flinken.png", "Mobile App", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Mobile App</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/camino.png", "Crypo Landing Page", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Crypo Landing Page</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/yourme.png", "Social Media Banner", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Social Media</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/nutritionintelli.png", "Social Media Banner", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Mobile App</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/form.png", "Login Form", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Login Form</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/cortex.png", "Slide Deck", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Slide Deck</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/root.png", "Mobile App", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Mobile App</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/sleap.png", "Landing Page", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Landing Page</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/peakwork.png", "Flyer", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Flyer</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/messenger.png", "Web App Interface", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Web App Interface</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/snoopo.png", "Mobile App", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">Mobile App</p>
-    </div>
-    <div class="flex-shrink-0 flex-grow-0 select-none pointer-events-none">
-        {% image "./src/images/work/nft.png", "NFT Artwork", "", "border border-gray-200 shadow-lg rounded-2xl h-80 xl:h-[560px] w-auto block" %}
-        <p class="mt-2">NFT Artwork</p>
+<div class="items flex overflow-x-scroll cursor-grab active:cursor-grabbing p-4 pb-2 border-y border-gray-200 bg-white w-full h-min text-sm text-gray-400" aria-label="Work showcase slider">
+    <div class="flex gap-4 *:flex-none *:select-none *:pointer-events-none">
+        <figure>
+            {% image "./src/images/work/flinken.png", "Mobile App", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Mobile App</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/camino.png", "Crypo Landing Page", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Crypo Landing Page</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/yourme.png", "Social Media Banner", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Social Media</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/nutritionintelli.png", "Social Media Banner", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Mobile App</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/form.png", "Login Form", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Login Form</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/cortex.png", "Slide Deck", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Slide Deck</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/root.png", "Mobile App", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Mobile App</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/sleap.png", "Landing Page", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Landing Page</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/peakwork.png", "Flyer", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Flyer</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/messenger.png", "Web App Interface", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Web App Interface</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/snoopo.png", "Mobile App", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">Mobile App</figcaption>
+        </figure>
+        <figure>
+            {% image "./src/images/work/nft.png", "NFT Artwork", "", "w-auto h-80 xl:h-[560px] rounded-2xl border border-gray-200 shadow-lg" %}
+            <figcaption class="mt-1">NFT Artwork</figcaption>
+        </figure>
     </div>
 </div>
 
 <script>
     const slider = document.querySelector('.items');
     let isDown = false;
-    let startX;
-    let scrollLeft;
+    let startX, scrollLeft;
 
-    slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    });
-    slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-    });
-    slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-    });
-    slider.addEventListener('mousemove', (e) => {
-    if(!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; //scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
-    console.log(walk);
-    });
+    const startDragging = (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+        startX -= slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    };
+
+    const stopDragging = () => {
+        isDown = false;
+        slider.classList.remove('active');
+    };
+
+    const drag = (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+        const walk = (x - slider.offsetLeft - startX) * 1.125;
+        slider.scrollLeft = scrollLeft - walk;
+    };
+
+    ['mousedown', 'touchstart'].forEach(evt => slider.addEventListener(evt, startDragging));
+    ['mouseleave', 'mouseup', 'touchend'].forEach(evt => slider.addEventListener(evt, stopDragging));
+    ['mousemove', 'touchmove'].forEach(evt => slider.addEventListener(evt, drag));
 </script>
