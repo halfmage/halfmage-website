@@ -1,0 +1,44 @@
+<div class="flex flex-nowrap gap-4 px-4 pb-4 overflow-x-scroll h-min w-full text-gray-400 text-sm items active:cursor-grabbing transition-all scroll-smooth *:flex-shrink-0 *:pointer-events-none *:select-none">
+    {% image "./src/images/work/flinken.png", "Mobile App", "",                    "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/camino.png", "Crypo Landing Page", "",             "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/yourme.png", "Social Media Banner", "",            "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/nutritionintelli.png", "Social Media Banner", "",  "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/form.png", "Login Form", "",                       "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/cortex.png", "Slide Deck", "",                     "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/root.png", "Mobile App", "",                       "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/sleap.png", "Landing Page", "",                    "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/peakwork.png", "Flyer", "",                        "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/messenger.png", "Web App Interface", "",           "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/snoopo.png", "Mobile App", "",                     "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+    {% image "./src/images/work/nft.png", "NFT Artwork", "",                       "border border-gray-200 shadow-lg rounded-2xl h-80 md:h-[560px] w-auto" %}
+</div>
+
+<script>
+    const slider = document.querySelector('.items');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    slider.scrollLeft = scrollLeft - walk;
+    console.log(walk);
+    });
+</script>
