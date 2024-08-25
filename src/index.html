@@ -26,20 +26,22 @@ layout: default
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         {% for a in projects %}
-        <a href="{{a.url}}" target="_blank" class="p-6 flex flex-col border border-gray-100 hover:border-gray-300 hover:bg-gray-50 rounded-xl group relative">
+        <a href="{{a.url}}" target="_blank" class="p-6 flex flex-col border border-gray-200 hover:border-gray-300 hover:bg-gray-50 rounded-xl group relative">
             <div class="flex items-center justify-between">
-                <div class="text-xl font-medium tracking-tight">
+                <div class="font-semibold tracking-tight">
                     {{a.name}}
                 </div>
                 <div class="w-8 flex-shrink-0">
                     {% image a.logo, a.name, "", "w-full h-full" %}
                 </div>
             </div>
-            <div class="text-sm leading-5 text-gray-500 mt-2 mb-3 line-clamp-3">
+            <div class="text-sm text-gray-500 mt-2 mb-3 line-clamp-2">
                 {{a.teaser}}
             </div>
-            <div class="flex flex-wrap justify-start text-xs text-gray-700 leading-4 group-hover:text-gray-900 mt-auto">
-                {{a.url}}
+            <div class="flex items-center gap-2">
+                {% for tag in a.tags %}
+                <div class="text-xs bg-gray-100 border border-gray-200 px-1.5 py-0.5 rounded-full">{{tag}}</div>
+                {% endfor %}
             </div>
         </a>
         {% endfor %} 

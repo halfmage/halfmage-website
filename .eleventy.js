@@ -38,6 +38,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget('tailwind.css')
     eleventyConfig.addPassthroughCopy('images')
     eleventyConfig.addPassthroughCopy('fonts')
+    eleventyConfig.addPassthroughCopy({ './src/images/favicon.png': './favicon.png' })
     eleventyConfig.addPassthroughCopy({ './node_modules/alpinejs/dist/cdn.js': './alpine.js' })
     eleventyConfig.addShortcode('version', function () {
         return now
