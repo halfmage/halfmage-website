@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Camino Network",
+        "logo": "./src/images/camino.png",
+        "tagline": "Building the travel industry's blockchain infrastructure",
+        "challenge": "Create a comprehensive brand identity and web presence for a revolutionary blockchain platform that needed to appeal to both tech-savvy developers and traditional travel industry stakeholders.",
+        "solution": "Developed a complete design system from the ground up, including branding, UI/UX design, and a modern website that bridges complex blockchain technology with accessible travel industry language.",
+        "results": [
+            "120+ travel industry supporters joined the consortium",
+            "Successfully positioned as the leading travel blockchain",
+            "Launched comprehensive documentation and developer resources",
+            "Created cohesive brand identity used across all touchpoints"
+        ],
+        "services": ["Branding", "Design System", "Website", "UI/UX"],
+        "url": "https://camino.network"
+    },
+    {
+        "name": "Chain4Travel",
+        "logo": "./src/images/chain4travel.png",
+        "tagline": "Facilitating the Camino consortium blockchain",
+        "challenge": "Establish Chain4Travel as the credible facilitator of a disruptive B2B, B2C, and D2C travel product trading platform, requiring a professional brand that resonates with major travel industry players.",
+        "solution": "Created a sophisticated brand identity and website that communicates trust, innovation, and industry expertise. Designed to convert enterprise clients while maintaining accessibility.",
+        "results": [
+            "Successfully onboarded 120+ consortium supporters",
+            "Established credibility in the traditional travel industry",
+            "Launched platform facilitating new trading approaches",
+            "Created marketing materials for investor presentations"
+        ],
+        "services": ["Branding", "Design", "Website", "Marketing Materials"],
+        "url": "https://chain4travel.com",
+        "testimonial": {
+            "text": "Halfmage creates beautiful designs with technical know-how and a deep understanding of their work. I have had the pleasure of working with Halfmage on various projects for several years.",
+            "author": "Ralf Usbeck",
+            "role": "Chairman of the Board of Directors @ Chain4Travel"
+        }
+    },
+    {
+        "name": "Sleap.io",
+        "logo": "./src/images/sleap.png",
+        "tagline": "First native Web3 hotel booking platform",
+        "challenge": "Design and brand the world's first blockchain-based hotel booking platform that needed to make Web3 technology approachable for everyday travelers while showcasing innovation to early adopters.",
+        "solution": "Developed a complete brand identity and design system that makes blockchain benefits clear without overwhelming users. Created an intuitive booking experience that highlights wallet rates and special deals.",
+        "results": [
+            "Launched first native Web3 hotel booking platform",
+            "Successfully integrated blockchain payments seamlessly",
+            "Created curated selection of exclusive wallet-rate deals",
+            "Built design system for scalable platform growth"
+        ],
+        "services": ["Branding", "Design System", "UI/UX", "Product Design"],
+        "url": "https://sleap.io",
+        "testimonial": null
+    }
+]
+
