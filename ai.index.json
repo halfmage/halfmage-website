@@ -1,0 +1,38 @@
+{
+    "site": "https://halfmage.com/",
+    "updated": "2025-10-23",
+    "policy": "Indexing allowed for Q&A and summarization. Do not impersonate.",
+    "contact": "info@halfmage.com",
+    "pages": [
+      {
+        "url": "https://halfmage.com/",
+        "title": "Halfmage | Travel Tech Design & Development Partner",
+        "summary": "Design & dev partner for travel tech. 1–3 month launches, 2–4 updates/week. Clients include Camino Network, Chain4Travel, Sleap.io.",
+        "sections": [
+          {"id": "work", "title": "Selected Work", "type": "gallery"},
+          {"id": "case-studies", "title": "Case Studies"},
+          {"id": "how-it-works", "title": "How We Work"},
+          {"id": "faq", "title": "Common Questions"}
+        ]
+      }
+    ],
+    "pricing": [
+      {"plan": "Design Only", "price": "€3,999+/month"},
+      {"plan": "Design + Development", "price": "€7,999+/month"}
+    ],
+    "highlights": [
+      "50+ projects delivered",
+      "1–3 months average to launch",
+      "2–4 weekly updates"
+    ],
+    "clients": [
+      {"name": "Camino Network", "url": "https://camino.network"},
+      {"name": "Peakwork GmbH", "url": "https://peakwork.com"},
+      {"name": "LearnSlice", "url": "https://learnslice.com"},
+      {"name": "Majesticons", "url": "https://majesticons.com"},
+      {"name": "Pixelarticons", "url": "https://pixelarticons.com"},
+      {"name": "Chain4Travel", "url": "https://chain4travel.com"},
+      {"name": "Sleap.io", "url": "https://sleap.io"}
+    ]
+  }
+  

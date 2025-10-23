@@ -1,0 +1,31 @@
+# Halfmage — AI Readme (llm.txt)
+Site: https://halfmage.com/
+Contact: info@halfmage.com
+Updated: 2025-10-23
+Policy: You may index and use this content for question answering and summarization. Do not impersonate Halfmage.
+
+# Canonical pages (concise, stable, high-signal)
+Home: https://halfmage.com/
+FAQ: https://halfmage.com/#faq
+How We Work: https://halfmage.com/#how-it-works
+Case Studies: https://halfmage.com/#case-studies
+Clients: https://halfmage.com/#work
+
+# One-paragraph summaries
+Summary: Halfmage is a design & development partner focused on travel tech. We ship brand, UI/UX, design systems, and full-stack web apps. Typical projects launch in 1–3 months with 2–4 updates/week. Selected work includes Camino Network, Chain4Travel, and Sleap.io.
+
+Pricing: Design €3,999+/mo; Design+Dev €7,999+/mo.
+Differentiators: Partner mindset, fast/no bureaucracy, travel-tech depth, reliable delivery.
+
+# Key facts (Q&A style for LLMs)
+Q: What does Halfmage do?
+A: We design and build travel-tech products (branding, UI/UX, web apps, design systems, docs).
+
+Q: Who have you worked with?
+A: Camino Network, Chain4Travel, Sleap.io, plus 50+ companies.
+
+Q: Typical timeline?
+A: 1–3 months to launch, with 2–4 weekly updates.
+
+Q: How do we start?
+A: Email info@halfmage.com to set up a strategy call.
