@@ -20,3 +20,5 @@ Allow: /
 # Google AI content usage switch (Gemini)
 User-agent: Google-Extended
 Allow: /
+
+Sitemap: https://halfmage.com/sitemap.xml
