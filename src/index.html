@@ -57,63 +57,58 @@ layout: default
         </p>
     </div>
     
-    {% for study in casestudies %}
-    <div class="mb-16 bg-gray-50 rounded-2xl p-6 md:p-10">
-        <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
-            <div class="w-16 h-16 flex-shrink-0">
-                {% image study.logo, study.name, "", "w-full h-full object-contain" %}
-            </div>
-            <div class="flex-1">
-                <h3 class="text-2xl font-semibold mb-2">{{study.name}}</h3>
-                <p class="text-gray-600 text-lg">{{study.tagline}}</p>
-            </div>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-8 mb-6">
-            <div>
-                <h4 class="font-semibold mb-2 text-gray-900">The Challenge</h4>
-                <p class="text-gray-600">{{study.challenge}}</p>
-            </div>
-            <div>
-                <h4 class="font-semibold mb-2 text-gray-900">Our Solution</h4>
-                <p class="text-gray-600">{{study.solution}}</p>
-            </div>
-        </div>
-        
-        <div class="mb-6">
-            <h4 class="font-semibold mb-3 text-gray-900">Results & Impact</h4>
-            <div class="grid md:grid-cols-2 gap-3">
-                {% for result in study.results %}
-                <div class="flex gap-2 items-start">
-                    <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <span class="text-gray-700">{{result}}</span>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for study in casestudies %}
+        <div class="group bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-300 hover:shadow-lg transition-all duration-200 flex flex-col">
+            <!-- Header -->
+            <div class="flex items-start gap-4 mb-4">
+                <div class="w-12 h-12 flex-shrink-0">
+                    {% image study.logo, study.name, "", "w-full h-full object-contain" %}
                 </div>
+                <div class="flex-1 min-w-0">
+                    <h3 class="text-xl font-semibold mb-1">{{study.name}}</h3>
+                    <p class="text-sm text-gray-600 line-clamp-2">{{study.tagline}}</p>
+                </div>
+            </div>
+            
+            <!-- Summary -->
+            <div class="mb-2 min-h-[3.75rem]">
+                <p class="text-xs text-gray-500 line-clamp-3 leading-tight">{{study.solution}}</p>
+            </div>
+            
+            <!-- Key Results (show top 2) -->
+            <div class="mb-4 space-y-2">
+                {% set resultCount = 0 %}
+                {% for result in study.results %}
+                    {% if resultCount < 2 %}
+                    <div class="flex gap-2 items-start">
+                        <svg class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-sm text-gray-700 line-clamp-2">{{result}}</span>
+                    </div>
+                    {% set resultCount = resultCount + 1 %}
+                    {% endif %}
                 {% endfor %}
             </div>
-        </div>
-        
-        <div class="flex flex-wrap gap-2 mb-6">
-            {% for service in study.services %}
-            <span class="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm">{{service}}</span>
-            {% endfor %}
-        </div>
-        
-        {% if study.testimonial %}
-        <div class="border-l-4 border-gray-900 pl-4 py-2 bg-white/50 rounded-r">
-            <p class="text-gray-700 italic mb-2">"{{study.testimonial.text}}"</p>
-            <p class="text-sm font-semibold">{{study.testimonial.author}}</p>
-            <p class="text-sm text-gray-600">{{study.testimonial.role}}</p>
-        </div>
-        {% endif %}
-        
-        <div class="mt-6">
-            <a href="{{study.url}}" target="_blank" class="inline-flex items-center gap-2 font-medium text-gray-900 hover:text-gray-600 transition-colors">
-                Visit {{study.name}} 
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            
+            <!-- Services -->
+            <div class="flex flex-wrap gap-1.5 mb-4">
+                {% set serviceCount = 0 %}
+                {% for service in study.services %}
+                    {% if serviceCount < 3 %}
+                    <span class="px-2 py-0.5 bg-gray-50 border border-gray-200 rounded text-xs text-gray-700">{{service}}</span>
+                    {% set serviceCount = serviceCount + 1 %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            
+            <!-- Link -->
+            <a href="{{study.url}}" target="_blank" class="inline-flex items-center justify-center gap-1.5 text-sm font-medium text-gray-900 border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-50 hover:border-gray-400 transition-colors mt-auto">
+                Visit site
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
             </a>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 
 <!-- CTA Section -->
