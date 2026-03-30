@@ -1,54 +1,85 @@
 [
     {
-        "name": "Camino Network",
-        "logo": "./src/images/camino.png",
-        "tagline": "Building the travel industry's blockchain infrastructure",
-        "challenge": "Create a comprehensive brand identity and web presence for a revolutionary blockchain platform that needed to appeal to both tech-savvy developers and traditional travel industry stakeholders.",
-        "solution": "Developed a complete design system from the ground up, including branding, UI/UX design, and a modern website that bridges complex blockchain technology with accessible travel industry language.",
+        "name": "Existential Psychiatry",
+        "domain": "existentialpsychiatry.com",
+        "tagline": "Branding, website, and SEO for a psychiatry practice. 3.2M search impressions in 16 months",
+        "challenge": "Build a complete brand identity and online presence for a specialized psychiatry practice, from zero to a high-visibility website that attracts patients through organic search.",
+        "solution": "Delivered full branding, design assets, website development, and SEO optimization. Built a content-rich site structured to rank for high-intent medical search queries.",
         "results": [
-            "120+ travel industry supporters joined the consortium",
-            "Successfully positioned as the leading travel blockchain",
-            "Launched comprehensive documentation and developer resources",
-            "Created cohesive brand identity used across all touchpoints"
+            "Over 3 million Google Search impressions in 16 months",
+            "20,500+ organic clicks from search",
+            "Impressions roughly tripled from mid-2025 to early 2026",
+            "Full branding, design assets, and website delivered"
+        ],
+        "services": ["Branding", "Design", "Website", "SEO"],
+        "url": "https://existentialpsychiatry.com",
+        "testimonial": null
+    },
+    {
+        "name": "Camino Network",
+        "domain": "camino.network",
+        "tagline": "Design system and website for a blockchain platform. 534K search impressions",
+        "challenge": "Create a comprehensive brand identity and web presence for a blockchain platform that needed to appeal to both developers and traditional travel industry stakeholders.",
+        "solution": "Developed a complete design system from the ground up, including branding, UI/UX design, and a modern website that bridges complex blockchain technology with accessible language.",
+        "results": [
+            "Over 500,000 Google Search impressions, 13,000+ clicks",
+            "Full design system delivered in 8 weeks",
+            "120+ industry supporters joined post-launch",
+            "Documentation portal and developer resources launched"
         ],
         "services": ["Branding", "Design System", "Website", "UI/UX"],
         "url": "https://camino.network"
     },
     {
-        "name": "Chain4Travel",
-        "logo": "./src/images/chain4travel.png",
-        "tagline": "Facilitating the Camino consortium blockchain",
-        "challenge": "Establish Chain4Travel as the credible facilitator of a disruptive B2B, B2C, and D2C travel product trading platform, requiring a professional brand that resonates with major travel industry players.",
-        "solution": "Created a sophisticated brand identity and website that communicates trust, innovation, and industry expertise. Designed to convert enterprise clients while maintaining accessibility.",
+        "name": "Smella",
+        "domain": "smella.de",
+        "tagline": "Branding, website, and SEO for a new consumer brand. 8% CTR from organic search",
+        "challenge": "Build a brand and web presence for a new consumer product from scratch, with SEO baked in from day one to drive organic discovery.",
+        "solution": "Delivered branding, design assets, website development, and SEO optimization. Structured the site for search visibility from launch.",
         "results": [
-            "Successfully onboarded 120+ consortium supporters",
-            "Established credibility in the traditional travel industry",
-            "Launched platform facilitating new trading approaches",
-            "Created marketing materials for investor presentations"
+            "8% click-through rate from Google Search (3x industry avg)",
+            "4,300+ impressions and 347 clicks in first 7 months",
+            "Steady upward growth trend since launch",
+            "Full branding, assets, and website delivered"
+        ],
+        "services": ["Branding", "Design", "Website", "SEO"],
+        "url": "https://smella.de",
+        "testimonial": null
+    },
+    {
+        "name": "Chain4Travel",
+        "domain": "chain4travel.com",
+        "tagline": "Positioned a B2B platform as the credible industry standard through brand and web",
+        "challenge": "Establish Chain4Travel as the credible facilitator of a B2B trading platform, requiring a professional brand that resonates with major industry players.",
+        "solution": "Created a sophisticated brand identity and website that communicates trust and innovation. Designed to convert enterprise clients while maintaining accessibility.",
+        "results": [
+            "Brand, website, and marketing materials in 3 months",
+            "120+ consortium supporters onboarded after launch",
+            "Investor presentation materials for fundraising rounds",
+            "Ongoing design partnership for 2+ years"
         ],
         "services": ["Branding", "Design", "Website", "Marketing Materials"],
         "url": "https://chain4travel.com",
         "testimonial": {
-            "text": "Halfmage creates beautiful designs with technical know-how and a deep understanding of their work. I have had the pleasure of working with Halfmage on various projects for several years.",
+            "text": "Gerrit creates beautiful designs with technical know-how and a deep understanding of his work. I have had the pleasure of working with Gerrit on various projects for several years.",
             "author": "Ralf Usbeck",
             "role": "Chairman of the Board of Directors @ Chain4Travel"
         }
     },
     {
         "name": "Sleap.io",
-        "logo": "./src/images/sleap.png",
-        "tagline": "First native Web3 hotel booking platform",
-        "challenge": "Design and brand the world's first blockchain-based hotel booking platform that needed to make Web3 technology approachable for everyday travelers while showcasing innovation to early adopters.",
-        "solution": "Developed a complete brand identity and design system that makes blockchain benefits clear without overwhelming users. Created an intuitive booking experience that highlights wallet rates and special deals.",
+        "domain": "sleap.io",
+        "tagline": "Designed and branded the first native Web3 hotel booking platform",
+        "challenge": "Design and brand a blockchain-based hotel booking platform that needed to make Web3 technology approachable for everyday travelers while showcasing innovation to early adopters.",
+        "solution": "Developed a complete brand identity and design system that makes blockchain benefits clear without overwhelming users. Created an intuitive booking experience highlighting wallet rates and deals.",
         "results": [
+            "Full brand identity and design system in 6 weeks",
             "Launched first native Web3 hotel booking platform",
-            "Successfully integrated blockchain payments seamlessly",
-            "Created curated selection of exclusive wallet-rate deals",
-            "Built design system for scalable platform growth"
+            "Seamless blockchain payment integration designed",
+            "Scalable design system built for platform growth"
         ],
         "services": ["Branding", "Design System", "UI/UX", "Product Design"],
         "url": "https://sleap.io",
         "testimonial": null
     }
 ]
-
