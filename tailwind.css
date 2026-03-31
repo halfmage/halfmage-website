@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #6366f1;
+    color: #fafafa;
+  }
+}
+
+@layer components {
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .label {
+    @apply text-[11px] font-semibold tracking-[0.12em] uppercase text-accent-light font-mono;
+  }
+
+  .divider {
+    @apply h-px bg-border;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-xl transition-all duration-200;
+  }
+  .card:hover {
+    @apply border-border bg-surface-raised;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
